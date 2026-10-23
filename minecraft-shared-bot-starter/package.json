@@ -1,0 +1,14 @@
+{
+  "name": "minecraft-shared-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arabic web dashboard and Minecraft bot starter",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "bedrock-protocol": "^3.60.1",
+    "express": "^5.1.0",
+    "mineflayer": "^4.33.0"
+  }
+}

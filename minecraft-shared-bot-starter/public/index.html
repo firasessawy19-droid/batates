@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>MineLink | لوحة بوت Minecraft</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="cube">M</span><div><b>MineLink</b><small>لوحة تحكم البوت</small></div></div><span class="tag">نسخة تجريبية</span></header>
+<main>
+<section class="hero"><div class="eyebrow">MINECRAFT BOT CONTROL</div><h1>خلّي البوت يدخل<br><span>عالمك بسهولة.</span></h1><p>لوحة بسيطة لإدارة اتصال بوت Minecraft. اختار نوع السيرفر، وابدأ الاتصال من لوحة الإدارة.</p></section>
+<section class="panel">
+<div class="panel-head"><div><h2>الاتصال بالسيرفر</h2><p>اختار إصدار الاتصال المناسب للسيرفر الذي أعددته.</p></div><span id="pill" class="status offline">غير متصل</span></div>
+<div class="choices">
+<button class="choice selected" data-edition="java"><span class="edition-icon">☕</span><span><b>Java Edition</b><small>سيرفرات Java المدعومة</small></span><span class="radio"></span></button>
+<button class="choice" data-edition="bedrock"><span class="edition-icon">◆</span><span><b>Bedrock Edition</b><small>سيرفرات Bedrock المدعومة</small></span><span class="radio"></span></button>
+</div>
+<label for="token">رمز الإدارة <small>يُحفظ في هذه الصفحة فقط أثناء فتحها</small></label>
+<input id="token" type="password" placeholder="أدخل ADMIN_TOKEN" autocomplete="off">
+<div class="actions"><button id="connect" class="primary">اتصال بالبوت <span>←</span></button><button id="disconnect" class="secondary">فصل الاتصال</button></div>
+<div id="notice" class="notice">اضبط متغيرات السيرفر ورمز الإدارة في الاستضافة قبل الاتصال.</div>
+</section>
+<section class="panel status-panel"><div class="panel-head"><div><h2>حالة البوت</h2><p>تحديث تلقائي كل 4 ثوانٍ</p></div><span class="pulse"></span></div><div id="message" class="current">البوت غير متصل</div><div class="log-head">سجل الأحداث</div><pre id="logs">لا توجد أحداث بعد.</pre></section>
+<section class="note"><b>مهم قبل التشغيل</b><p>اختيار Bedrock لا يجعل بوت Java يدخل تلقائيًا كـ Bedrock. يجب أن يكون السيرفر قابلًا لاستقبال هذا النوع من الاتصال، ويجب أن تكون نسخة البروتوكول مدعومة. لا تضع كلمات مرور حساب Microsoft/Xbox في الواجهة العامة.</p></section>
+</main>
+<footer>MineLink · مشروع بداية مفتوح المصدر</footer>
+<script src="/app.js"></script>
+</body></html>
